@@ -31,13 +31,13 @@ header {
 }
 
 nav {
-    background-color: #3498db;
+    background-color: rgb(67, 25, 99);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
-    float: left;
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -203,6 +203,16 @@ nav a {
 
 .social-icon:last-child {
     margin-right: 15px; /* Hapus margin-right untuk ikon terakhir */
+} 
+
+.social-icon i {
+    font-size: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    color: #fff; /* Sesuaikan warna ikon sesuai kebutuhan */
+}
+
+/* Hover effect pada ikon */
+.social-icon:hover i {
+    color: #2980b9; /* Sesuaikan warna hover sesuai kebutuhan */
 }
 
 .facilities {
@@ -261,3 +271,20 @@ nav a {
         width: 80%; /* Adjust as needed */
     }
 }
+
+.schedule {
+    display: flex;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+    padding: 0 10px; /* Sesuaikan dengan padding yang diinginkan */
+    text-align: left;
+  }
+  
+  /* Styling untuk menjaga keterbacaan teks */
+  .schedule p {
+    margin: 5px 0;
+  }
+  

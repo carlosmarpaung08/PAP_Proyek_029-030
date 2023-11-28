@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dashboard.css" />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <img src="../Image/del.jpg" alt="Logo" class="logo" />
-        <div class="logo-text">
-          <p class="large-text">Institut Teknologi Del</p>
-          <b><p class="medium-text">Martuhan, Marroha, Marbisuk</p></b>
-        </div>
-      </div>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search..." />
-        <button onclick="search()">Search</button>
-      </div>
-    </header>
-
-    <nav>
-      <a href="#">Dashboard</a>
-      <a href="#">Pengumuman</a>
-      <a href="#">Program Pendidikan</a>
-      <a href="#">Fasilitas</a>
-      <a href="#">Lembaga</a>
-    </nav>
-
-    <div class="content">
-      <div class="text-container">
-        <h2 class="medium-text">Welcome to the Admin Dashboard</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <!-- Add a link to your chosen icon library (Font Awesome in this case) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../Image/del.jpg" alt="Logo" class="logo" />
+      <div class="logo-text">
+        <p class="large-text">Institut Teknologi Del</p>
+        <b><p class="medium-text">Martuhan, Marroha, Marbisuk</p></b>
       </div>
     </div>
-    <div class="content">
-      <div class="menu-container">
-        <h3 class="menu-title">Tambah Slider</h3>
-        <div class="card">
-          <!-- Isi dengan form atau konten yang sesuai untuk menambah slider -->
-          <button class="action-button create-button">Create</button>
-          <button class="action-button edit-button">Edit</button>
-          <button class="action-button delete-button">Delete</button>
-        </div>
-      </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button onclick="search()">Search</button>
+    </div>
+  </header>
 
-      <!-- Tambah Konten -->
-      <div class="menu-container">
-        <h3 class="menu-title">Tambah Konten</h3>
-        <div class="card">
-          <!-- Isi dengan form atau konten yang sesuai untuk menambah konten -->
-          <button class="action-button create-button">Create</button>
-          <button class="action-button edit-button">Edit</button>
-          <button class="action-button delete-button">Delete</button>
-        </div>
+  <nav>
+    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="#"><i class="fas fa-bullhorn"></i> Pengumuman</a>
+    <a href="#"><i class="fas fa-graduation-cap"></i> Program Pendidikan</a>
+    <a href="#"><i class="fas fa-building"></i> Fasilitas</a>
+    <a href="#"><i class="fas fa-university"></i> Lembaga</a>
+  </nav>
+
+  <div class="content">
+    <div class="text-container">
+      <h2 class="medium-text">Welcome to the Admin Dashboard</h2>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="menu-container">
+      <h3 class="menu-title">Tambah Slider</h3>
+      <div class="card">
+        <!-- Isi dengan form atau konten yang sesuai untuk menambah slider -->
+        <button class="action-button create-button">Create</button>
+        <button class="action-button edit-button">Edit</button>
+        <button class="action-button delete-button">Delete</button>
       </div>
     </div>
 
- <div class="content">
-      <!-- Tambah Agenda -->
-      <div class="menu-container">
-        <h3 class="menu-title">Tambah Agenda</h3>
-        <div class="card">
-          <!-- Isi dengan form atau konten yang sesuai untuk menambah agenda -->
-          <button class="action-button create-button">Create</button>
-          <button class="action-button edit-button">Edit</button>
-          <button class="action-button delete-button">Delete</button>
-        </div>
-      </div>
-
-      <!-- Tambah Kalender -->
-      <div class="menu-container">
-        <h3 class="menu-title">Tambah Kalender</h3>
-        <div class="card">
-          <!-- Isi dengan form atau konten yang sesuai untuk menambah kalender -->
-          <button class="action-button create-button">Create</button>
-          <button class="action-button edit-button">Edit</button>
-          <button class="action-button delete-button">Delete</button>
-        </div>
+    <!-- Tambah Konten -->
+    <div class="menu-container">
+      <h3 class="menu-title">Tambah Konten</h3>
+      <div class="card">
+        <!-- Isi dengan form atau konten yang sesuai untuk menambah konten -->
+        <button class="action-button create-button">Create</button>
+        <button class="action-button edit-button">Edit</button>
+        <button class="action-button delete-button">Delete</button>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="content">
+    <!-- Tambah Agenda -->
+    <div class="menu-container">
+      <h3 class="menu-title">Tambah Agenda</h3>
+      <div class="card">
+        <!-- Isi dengan form atau konten yang sesuai untuk menambah agenda -->
+        <button class="action-button create-button">Create</button>
+        <button class="action-button edit-button">Edit</button>
+        <button class="action-button delete-button">Delete</button>
+      </div>
+    </div>
+
+    <!-- Tambah Kalender -->
+    <div class="menu-container">
+      <h3 class="menu-title">Tambah Kalender</h3>
+      <div class="card">
+        <!-- Isi dengan form atau konten yang sesuai untuk menambah kalender -->
+        <button class="action-button create-button">Create</button>
+        <button class="action-button edit-button">Edit</button>
+        <button class="action-button delete-button">Delete</button>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
