@@ -112,7 +112,7 @@ body {
   }
   
   .action-image {
-    max-width: 150px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+    max-width: 200px; /* Sesuaikan lebar gambar sesuai kebutuhan */
     margin-bottom: 10px;
     border-radius: 8px;
   }

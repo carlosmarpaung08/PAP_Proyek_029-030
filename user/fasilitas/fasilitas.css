@@ -161,18 +161,51 @@ footer {
 }
 
 nav {
-    background-color: rgb(67, 25, 99);
-    overflow: hidden;
     display: flex;
     justify-content: center;
-}
-
-nav a {
+    align-items: center;
+    background-color: rgb(67, 25, 99);
+    overflow: hidden;
+  }
+  
+  nav a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+    display: inline-block;
+    position: relative; /* Tambahkan properti ini */
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #beb804;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:   #f4f4f4;
+  }
 
 .text-container {
     text-align: left;
@@ -232,6 +265,13 @@ nav a {
 
   .lab{
     text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .no-margin {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .card {

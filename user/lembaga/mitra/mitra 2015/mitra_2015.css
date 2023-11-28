@@ -29,8 +29,8 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
-
-nav {
+  
+  nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,9 +46,9 @@ nav {
     display: inline-block;
     position: relative; /* Tambahkan properti ini */
   }
-
-/* Dropdown styling */
-.dropdown {
+  
+  /* Dropdown styling */
+  .dropdown {
     display: inline-block;
   }
   
@@ -76,50 +76,13 @@ nav {
     display: block;
     background-color:   #f4f4f4;
   }
-
-
-.slider {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider img {
-    width: 80%;
-    height: auto;
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(8, 8, 8);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
+  
 .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    width: 100%; /* Add this line to ensure the card takes 100% width */
 }
 
 .card-item {
@@ -129,13 +92,14 @@ nav {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    width: 100%; /* Add this line to ensure the card-item takes 100% width */
 }
 
-.card-image {
-    max-width: 60%;
-    height: auto;
-    margin-bottom: 10px;
+.card-item table {
+    width: 100%; /* Add this line to ensure the table takes 100% width */
 }
 
 footer {
@@ -194,6 +158,42 @@ footer {
     font-size: 1em;
 }
 
+nav {
+    background-color: rgb(67, 25, 99);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.text-container {
+    text-align: left;
+}
+
+.text-container p {
+    margin: 5px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
 .social-icons {
     display: flex;
 }
@@ -227,46 +227,26 @@ footer {
     color: #2980b9; /* Sesuaikan warna hover sesuai kebutuhan */
 }
 
-.text-container {
-    text-align: left;
-}
-
-.text-container p {
-    margin: 5px 0;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 50px; /* Sesuaikan nilai ini jika diperlukan */
-}
-
-.social-icon img {
-    margin-bottom: 5px; /* Sesuaikan nilai ini jika diperlukan */
-}
-
-.social-text {
-    font-size: 13px;
-}
-
-.social-icon:last-child {
-    margin-right: 15px; /* Hapus margin-right untuk ikon terakhir */
-}
-
-section {
+.facilities {
     padding: 20px;
-}
-
-section h1 {
+  }
+  
+  .facilities h2 {
     color: black;
-}
+  }
 
-.card {
+  .lab{
+    text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .no-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -275,49 +255,41 @@ section h1 {
 
 .card-item {
     flex: 1;
-    width: calc(50% - 20px); /* Two items per row with margin */
     margin: 10px;
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
 }
 
-.card-item.bioteknologi,
-.card-item.teknologi-industri {
-    width: 100%; /* Full width for these specific cards */
+.card-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust as needed */
 }
 
-@media (max-width: 768px) {
+/* New CSS rules for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .card-item {
-        width: calc(100% - 20px); /* Full width on smaller screens */
+        width: 80%; /* Adjust as needed */
     }
 }
 
-.card-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.card-item h2 {
-    margin-top: 10px;
-    color: black;
-}
-
-.card-item p {
-    color: black;
-}
-
-.misi{
-    text-align: justify;
-}
-
-.prodi{
-    text-align: justify;
-}
-
-.vokasi{
-    text-align: justify;
-}
+.schedule {
+    display: flex;
+  }
+  
+  /* Styling untuk menjaga keterbacaan teks */
+  .schedule p {
+    margin: 5px 0;
+  }
+  

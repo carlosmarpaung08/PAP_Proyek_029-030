@@ -29,20 +29,53 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
-
-nav {
-    background-color: #3498db;
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(67, 25, 99);
     overflow: hidden;
-}
-
-nav a {
-    float: left;
-    display: block;
+  }
+  
+  nav a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+    display: inline-block;
+    position: relative; /* Tambahkan properti ini */
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #beb804;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color:   #f4f4f4;
+  }
 
 .slider {
     width: 100%;
@@ -84,18 +117,7 @@ nav a {
 .card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     padding: 20px;
-}
-
-.card-item {
-    flex: 1;
-    margin: 10px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
 }
 
 .card-image {
@@ -168,16 +190,10 @@ nav {
 }
 
 nav a {
-    float: left;
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-nav a i {
-    margin-right: 8px;
 }
 
 .text-container {
@@ -239,6 +255,92 @@ nav a i {
     margin-left: 10px; /* Adjust as needed for spacing between cards */
 }
 
+.facilities {
+    padding: 20px;
+  }
+  
+  .facilities h2 {
+    color: black;
+  }
+
+  .card-image1 {
+    float: left;
+    height: auto;
+    float: left;
+    margin-right: 20px; /* Sesuaikan nilai margin-right sesuai kebutuhan */
+  }
+
+  .lab{
+    text-align: justify;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .no-margin {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card-item {
+    flex: 1;
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* New CSS rules for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-item {
+        width: 80%; /* Adjust as needed */
+    }
+}
+
+.schedule {
+    display: flex;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+    padding: 0 10px; /* Sesuaikan dengan padding yang diinginkan */
+    text-align: left;
+  }
+  
+  /* Styling untuk menjaga keterbacaan teks */
+  .schedule p {
+    margin: 5px 0;
+  }
+  
+  /* Style for Calendar card */
+.calendar-card {
+    flex: 1;
+    margin-left: 10px; /* Adjust as needed for spacing between cards */
+}
+
 /* Style for Calendar table */
 table {
     width: 100%;
@@ -291,4 +393,3 @@ td.other-month {
     display: table;
     clear: both;
 }
-
