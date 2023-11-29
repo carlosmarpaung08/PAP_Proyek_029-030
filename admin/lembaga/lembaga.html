@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="pendidikan.css" />
+  <link rel="stylesheet" href="lembaga.css" />
   <!-- Add a link to your chosen icon library (Font Awesome in this case) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>Admin Pendidikan</title>
+  <title>Admin Fasilitas</title>
 </head>
 <body>
   <header>
@@ -33,30 +33,18 @@
 
   <div class="content">
     <div class="text-container">
-      <h2 class="medium-text">Welcome to the Admin Program Pendidikan</h2>
+      <h2 class="medium-text">Welcome to the Admin Lembaga</h2>
     </div>
   </div>
 
   <div class="content">
     <div class="menu-container">
-      <h3 class="menu-title">Tambah Program Pendidikan</h3>
+      <h3 class="menu-title">Tambah Lembaga</h3>
       <div class="card">
-        <div class="description-container">
-          <label for="fakultas">Fakultas:</label>
-          <input type="text" id="fakultas" placeholder="Enter Fakultas..." />
-        </div>
-        <div class="description-container">
-          <label for="prodi">Program Studi (Prodi):</label>
-          <input type="text" id="prodi" placeholder="Enter Program Studi..." />
-        </div>
-        <div class="description-container">
-          <label for="deskripsi">Deskripsi Prodi:</label>
-          <textarea id="deskripsi" placeholder="Enter Deskripsi Prodi..."></textarea>
-        </div>
-        <div class="action-buttons">
-          <button class="action-button create-button" onclick="createProgram()">Create</button>
-          <button class="action-button edit-button" onclick="editProgram()">Edit</button>
-          <button class="action-button delete-button" onclick="deleteProgram()">Delete</button>
+        <div class="button-container">
+          <button class="action-button create-button">Create</button>
+          <button class="action-button edit-button">Edit</button>
+          <button class="action-button delete-button">Delete</button>
         </div>
       </div>
     </div>

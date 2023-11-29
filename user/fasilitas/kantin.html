@@ -10,7 +10,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dashboard.css"
+      href="fasilitas.css"
     />
     <!-- Font Awesome Icons -->
     <link
@@ -37,18 +37,18 @@
     </header>
 
     <nav>
-      <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+      <a href="../dashboard/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
       <a href="../pengumuman/pengumuman.html"><i class="fas fa-bullhorn"></i> Pengumuman</a>
       <a href="../program pendidikan/pendidikan.html"><i class="fas fa-graduation-cap"></i> Program Pendidikan</a>
       <div class="dropdown">
         <a href="#" class="dropbtn"><i class="fas fa-building"></i> Fasilitas<i class="fas fa-caret-down"></i></a>
         <div class="dropdown-content">
-          <a href="../fasilitas/laboratorium.html  ">Laboratorium</a>
-          <a href="../fasilitas/akomodasi.html">Akomodasi</a>
-          <a href="../fasilitas/kantin.html">Kantin</a>
-         <a href="../fasilitas/perpustakaan.html">Perpustakaan</a>
-         <a href="../fasilitas/hiburan dan olahraga.html">Hiburan dan Olahraga</a>
-         <a href="../fasilitas/klinik.html">Klinik</a>
+          <a href="laboratorium.html  ">Laboratorium</a>
+          <a href="akomodasi.html">Akomodasi</a>
+          <a href="kantin.html">Kantin</a>
+         <a href="perpustakaan.html">Perpustakaan</a>
+         <a href="hiburan dan olahraga.html">Hiburan dan Olahraga</a>
+         <a href="klinik.html">Klinik</a>
         </div>
       </div>
       <div class="dropdown">
@@ -61,76 +61,44 @@
       </div>
     </nav>
 
-    <div class="slider">
-      <a href="#"><img src="../Image/slider1.jpg" alt="Slider Image 1" class="slider-img" /></a>
-      <a href="#"><img src="../Image/slider2.jpg" alt="Slider Image 2" class="slider-img" /></a>
-      <a href="#"><img src="../Image/slider3.jpg" alt="Slider Image 3" class="slider-img" /></a>
-      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
+    <section class="facilities">
+        <div class="card">
+            <div class="card-item">
+                <h3 style="font-size: 25px;">Kantin</h3>
+                <img style="width: 500px;" src="../Image/kantin.jpg" alt="Facility Name" class="card-image1" />
+                <p class="lab">Kantin Politeknik Informatika Del menyediakan menu makanan yang bergizi dan sehat untuk semua mahasiswa/i. Menu yang disediakan selalu memenuhi standar gizi, sehingga mahasiswa bisa melaksanakan aktivitas perkuliahan dengan sehat dan prima. Setiap mahasiswa diwajibkan untuk makan di kantin tiga kali setiap harinya.</p><br>
+                <p class="lab">Jam makan mahasiswa yang berlaku di kantin Politeknik Informatika Del selama masa perkuliahan setiap minggunya sebagai berikut:</p><br>
+            
+                <div class="schedule">
+                  <div class="left-column">
+                    <p><strong>Hari Senin, Selasa, dan Kamis:</strong></p>
+                    <p>Makan pagi: Pukul 07:00 – 07:20 WIB</p>
+                    <p>Makan siang: Pukul 12:15 – 12:35 WIB</p>
+                    <p>Makan malam: Pukul 19:00 – 19:20 WIB</p><br>
+                
+                    <p><strong>Hari Rabu:</strong></p>
+                    <p>Makan pagi: Pukul 07:30 – 07:50 WIB</p>
+                    <p>Makan siang: Pukul 12:15 – 12:35 WIB</p>
+                    <p>Makan malam: Pukul 19:00 – 19:20 WIB</p>
+                  </div>
+                
+                  <!-- Bagian Kanan -->
+                  <div class="right-column">
+                    <p><strong>Hari Jumat:</strong></p>
+                    <p>Makan pagi: Pukul 07:30 – 07:50 WIB</p>
+                    <p>Makan siang: Pukul 12:15 – 12:35 WIB</p>
+                    <p>Makan malam: Pukul 19:00 – 19:20 </p><br>
+                
+                    <p><strong>Hari Sabtu:</strong></p>
+                    <p>Makan pagi: Pukul 08:00 – 09:00 WIB</p>
+                    <p>Makan siang: Pukul 12:00 – 13:00 WIB</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+      </section>
 
-    <div class="card">
-      <div class="card-item">
-       <a href="#"> <img
-          src="../Image/content1.jpg"
-          alt="Why Del Image"
-          class="card-image"
-        /></a>
-        <h2>Why Del?</h2>
-        <p>
-          Del adalah salah satu universitas riset atau institusi akademik
-          terkemuka di dunia yang terus mengejar pencapaian tertinggi dalam hal
-          penemuan, pengembangan dan difusi pengetahuan secara regional dan
-          global.
-        </p>
-      </div>
-      <div class="card-item">
-        <a href="#"><img
-          src="../Image/content2.jpg"
-          alt="Faculty Image"
-          class="card-image"
-        /></a>
-        <h2>Fakultas</h2>
-        <p>
-          Sejarah Institut Teknologi Del dimulai sejak 2001 dimana IT Del
-          menjadi representasi institusi pendidikan. Hingga hari ini, IT Del
-          terus memainkan peran penting di tingkat nasional dan global.
-        </p>
-      </div>
-      <div class="card-item">
-        <a href="#"><img
-          src="../Image/content3.png"
-          alt="Campus Life Image"
-          class="card-image"
-        /></a>
-        <h2>Selengkapnya</h2>
-        <p>
-          Kampus kami adalah tempat berkumpulnya orang-orang yang kreatif,
-          dinamis, dan menginspirasi untuk tumbuh bersama.
-        </p>
-      </div>
-    </div>
-    <!-- Additional Container for Agenda Kegiatan -->
-    <div class="agenda-container">
-      <!-- Left Card for Agenda -->
-      <div class="card-item agenda-card">
-        <h2>Agenda Kegiatan</h2>
-        <p>
-          <b>Senin, 23 Oktober - Jumat, 08 Desember</b><br />Masa Perkuliahan
-          dan Praktikum
-        </p>
-        <p>
-          <b>Selasa, 31 Oktober - Sabtu, 09 Desember</b><br />Monitoring MBKM
-        </p>
-      </div>
-
-      <!-- Right Card for Calendar -->
-      <div class="card-item calendar-card">
-        <h2>Kalender</h2>
-        <div id="calendar-container"></div>
-      </div>
-    </div>
-    <!-- Footer Section -->
+<!-- Footer Section -->
     <footer>
       <div class="logo-container">
         <img src="../Image/del.jpg" alt="Kampus Logo" class="footer-logo" />
@@ -163,7 +131,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="dashboard.js"></script>
   </body>
 </html>
