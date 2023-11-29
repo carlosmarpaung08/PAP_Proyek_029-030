@@ -126,6 +126,43 @@ body {
     border-radius: 8px;
   }
 
+  .action-image1 {
+    max-width:600px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+/* Tambah Agenda Form Styles */
+.form-container {
+  margin-top: 10px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  height: 100px; /* Sesuaikan tinggi textarea sesuai kebutuhan */
+}
+
+/* Optional: Adjust the spacing or styling of buttons */
+.button-container {
+  margin-top: 10px;
+}
+
+
   .description-container {
     margin-top: 10px;
   }
