@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="lembaga.css" />
-  <!-- Add a link to your chosen icon library (Font Awesome in this case) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <title>Admin Fasilitas</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lembaga.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Admin Lembaga</title>
+  </head>
 <body>
   <header>
     <div class="logo-container">
@@ -38,16 +38,44 @@
   </div>
 
   <div class="content">
-    <div class="menu-container">
-      <h3 class="menu-title">Tambah Lembaga</h3>
-      <div class="card">
-        <div class="button-container">
-          <button class="action-button create-button">Create</button>
-          <button class="action-button edit-button">Edit</button>
-          <button class="action-button delete-button">Delete</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Tambah Lembaga</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="lembaga">Lembaga:</label>
+                                <input type="text" class="form-control" id="lembaga" placeholder="Enter lembaga..." />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tahun">Tahun:</label>
+                                <input type="text" class="form-control" id="tahun" placeholder="Enter tahun..." />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kerja-sama">Kerja Sama:</label>
+                                <input type="text" class="form-control" id="kerja-sama" placeholder="Enter kerja sama..." />
+                            </div>
+
+                            <div class="form-group">
+                              <label for="detail-kerja-sama">Detail kerja Sama:</label>
+                              <textarea class="form-control" id="detail-kerja-sama" placeholder="Enter details kerja sama..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success create-button">Create</button>
+                                <button type="button" class="btn btn-primary edit-button">Edit</button>
+                                <button type="button" class="btn btn-danger delete-button">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </body>
 </html>
